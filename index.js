@@ -44,7 +44,7 @@ const httpServer = http.createServer(chatServer)
 // set up socket.io server
 const io = new Server(httpServer,{
     cors:{
-        origin:"http://localhost:5173",
+        origin:"https://chatbuddy-liart.vercel.app",
         methods:["GET","POST"]
     }
 })
